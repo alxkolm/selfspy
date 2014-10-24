@@ -186,7 +186,7 @@ class Sniffer:
             break
         cur_class = cur_class or ''
         cur_name = cur_name or ''
-        return cur_class.decode('latin1'), cur_window, cur_name.decode('latin1')
+        return cur_class.decode('UTF-8'), cur_window, cur_name.decode('UTF-8')
 
     def get_geometry(self, cur_window):
         i = 0
